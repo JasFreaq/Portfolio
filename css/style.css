@@ -1,3 +1,11 @@
+body
+{
+    font-size: 16px;
+    color: white;
+    background-color: #311700;
+    letter-spacing: 1px;
+}
+
 .overlay
 {
     width: 100%;
@@ -40,7 +48,7 @@
 
 .slides-pagination a.current 
 {
-    background: aliceblue;
+    background: white;
 }
 
 .titleMessage
@@ -56,7 +64,6 @@
 
 .titleMessage .heading p
 {
-    color: aliceblue;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
@@ -80,4 +87,43 @@
 .aboutImg
 {
     max-width: 100%;
+}
+
+.skillsSection
+{
+    background-color: #c86093;
+}
+
+.skill
+{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.chart
+{
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent
+{
+    line-height: 152px;
+    display: inline-block;
+    font-size: 32px;
+}
+
+.chart .percent::after
+{
+    content: '%';
 }
