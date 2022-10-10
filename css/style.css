@@ -100,6 +100,11 @@ body
     margin-left: 10px;
 }
 
+.skill h4
+{
+    margin-top: 10px;
+}
+
 .chart
 {
     position: relative;
@@ -126,4 +131,66 @@ body
 .chart .percent::after
 {
     content: '%';
+}
+
+.statItem
+{
+    margin-top: 30px;
+    position: relative;
+}
+
+.statInnerContainer
+{
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #d3d3d3;
+    border-top: none;
+}
+
+.statInnerContainer::before,
+.statInnerContainer::after
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.statInnerContainer::before
+{
+    right: 0px;
+}
+
+.statInnerContainer::after
+{
+    left: 0px;
+}
+
+.statContent h2
+{
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #c86093;
+}
+
+.statContent h3
+{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.statIcon
+{
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #d3d3d3;
 }
