@@ -33,6 +33,16 @@
     background-image: url(../img/icons/next.png);
 }
 
+.slides-pagination a 
+{
+    border: 2px solid rgba(128, 128, 128, 255);
+}
+
+.slides-pagination a.current 
+{
+    background: aliceblue;
+}
+
 .titleMessage
 {
     position: absolute;
@@ -60,4 +70,14 @@
 .titleMessage .heading .sub
 {
     font-size: 24px;
+}
+
+.section
+{
+    padding: 100px 0px;
+}
+
+.aboutImg
+{
+    max-width: 100%;
 }
