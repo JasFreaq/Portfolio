@@ -87,6 +87,9 @@ body
 .aboutImg
 {
     max-width: 100%;
+    padding: 10px;
+    border: 2px solid #d3d3d3;
+    margin-bottom: 10px;
 }
 
 .skillsSection,
@@ -384,4 +387,40 @@ body
 .copyrightSection p
 {
     margin: 0;
+}
+
+#navigation
+{
+    background-color: #c86093;
+    padding: 20px 10px;
+    z-index: 10;
+    width: 100%;
+}
+
+#navigation li
+{
+    padding: 0px 10px;
+}
+
+#navigation li a
+{
+    color: white;
+}
+
+.navbar-brand,
+.navbar-brand:hover
+{
+    color: white;
+}
+
+.navbar-toggler-icon
+{
+    background: url("../img/icons/menu.png");
+    background-size: 100%;
+}
+
+.fixedNav #navigation
+{
+    position: fixed;
+    top: 0;
 }
