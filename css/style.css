@@ -374,3 +374,14 @@ body
 {
     padding: 0px;
 }
+
+.copyrightSection
+{
+    background-color: black;
+    padding: 30px 5px;
+}
+
+.copyrightSection p
+{
+    margin: 0;
+}
