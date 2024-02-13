@@ -10,7 +10,7 @@ $(window).on("load", function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Software Engineer.", "Game Developer.", "Student.", "Professional."],
+        strings: ["Game Developer.", "Software Engineer.", "Student.", "Professional."],
         typeSpeed: 80,
         startDelay: 1250,
         backSpeed: 60,
