@@ -49,43 +49,6 @@ $(document).ready(function() {
             }
         }
     });
-
-    var skillsTopOffset = $(".skillsSection").offset().top;
-    var statsTopOffset = $(".statsSection").offset().top;
-    var countedUp = false;
-
-    $(window).scroll(function() {
-
-        if (window.scrollY > skillsTopOffset - $(window).height() + 200) {
-            
-            $('.chart').easyPieChart( {
-                easing: 'easeInOut',
-                barColor: '#fe0065',
-                trackColor: '#d3d3d3',
-                scaleColor: '#d3d3d3',
-                scaleLength: 4,
-                lineWidth: 4,
-                size: 152,
-                onStep: function(from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-
-        }
-
-        if (!countedUp && window.scrollY > statsTopOffset - $(window).height() + 200) {
-
-            $(".counter").each(function() {
-                var element = $(this);
-                var endVal = parseInt(element.text());
-        
-                element.countup(endVal);
-            });
-
-            countedUp = true;
-        }
-
-    });
     
     $(".filters a").click(function() {
 
